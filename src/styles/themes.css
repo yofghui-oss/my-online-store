@@ -1,0 +1,324 @@
+/* Theme-specific CSS Variables for Dynamic Theme Switching */
+
+/* Base theme variables */
+:root {
+  /* Default (Minimal) Theme */
+  --theme-primary: #1f2937;
+  --theme-secondary: #374151;
+  --theme-accent: #059669;
+  --theme-background: #ffffff;
+  --theme-text: #1f2937;
+  --theme-border: #e5e7eb;
+  --theme-border-radius: 0.5rem;
+  --theme-shadow: none;
+}
+
+/* Minimal Theme */
+.theme-minimal {
+  --theme-primary: #1f2937;
+  --theme-secondary: #374151;
+  --theme-accent: #059669;
+  --theme-background: #ffffff;
+  --theme-text: #1f2937;
+  --theme-border: #e5e7eb;
+  --theme-border-radius: 0.5rem;
+  --theme-shadow: none;
+}
+
+/* Tech Theme */
+.theme-tech {
+  --theme-primary: #3b82f6;
+  --theme-secondary: #1e293b;
+  --theme-accent: #06b6d4;
+  --theme-background: #0f172a;
+  --theme-text: #f8fafc;
+  --theme-border: #334155;
+  --theme-border-radius: 0.75rem;
+  --theme-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Tech theme specific gradients */
+  --theme-gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --theme-gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --theme-glow: 0 0 20px rgba(59, 130, 246, 0.5);
+}
+
+/* Modern Theme */
+.theme-modern {
+  --theme-primary: #8b5cf6;
+  --theme-secondary: #0f172a;
+  --theme-accent: #f59e0b;
+  --theme-background: #fafafa;
+  --theme-text: #111827;
+  --theme-border: #d1d5db;
+  --theme-border-radius: 0.75rem;
+  --theme-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Modern theme specific gradients */
+  --theme-gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --theme-gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --theme-gradient-accent: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+
+/* Luxe Theme */
+.theme-luxe {
+  --theme-primary: #d4af37;
+  --theme-secondary: #1a1a1a;
+  --theme-accent: #c9a96e;
+  --theme-background: #fefefe;
+  --theme-text: #1a1a1a;
+  --theme-border: #e5e5e5;
+  --theme-border-radius: 0.25rem;
+  --theme-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Luxe theme specific gradients */
+  --theme-gradient-primary: linear-gradient(135deg, #d4af37 0%, #f4e4bc 100%);
+  --theme-gradient-secondary: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  --theme-gradient-accent: linear-gradient(135deg, #c9a96e 0%, #e6d7c3 100%);
+  --theme-gold-shine: linear-gradient(45deg, #d4af37, #f4e4bc, #d4af37);
+}
+
+/* Vibrant Theme */
+.theme-vibrant {
+  --theme-primary: #ec4899;
+  --theme-secondary: #7c3aed;
+  --theme-accent: #06b6d4;
+  --theme-background: #ffffff;
+  --theme-text: #1f2937;
+  --theme-border: #e5e7eb;
+  --theme-border-radius: 1rem;
+  --theme-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Vibrant theme specific gradients */
+  --theme-gradient-primary: linear-gradient(135deg, #ec4899 0%, #f97316 100%);
+  --theme-gradient-secondary: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+  --theme-gradient-accent: linear-gradient(135deg, #06b6d4 0%, #10b981 100%);
+  --theme-gradient-rainbow: linear-gradient(135deg, #ec4899, #7c3aed, #06b6d4, #10b981, #f59e0b);
+  --theme-vibrant-glow: 0 0 30px rgba(236, 72, 153, 0.4);
+}
+
+/* Common theme utility classes */
+.theme-bg-primary {
+  background-color: var(--theme-primary);
+}
+
+.theme-bg-secondary {
+  background-color: var(--theme-secondary);
+}
+
+.theme-bg-accent {
+  background-color: var(--theme-accent);
+}
+
+.theme-bg-background {
+  background-color: var(--theme-background);
+}
+
+.theme-text-primary {
+  color: var(--theme-primary);
+}
+
+.theme-text-secondary {
+  color: var(--theme-secondary);
+}
+
+.theme-text-accent {
+  color: var(--theme-accent);
+}
+
+.theme-text-main {
+  color: var(--theme-text);
+}
+
+.theme-border {
+  border-color: var(--theme-border);
+}
+
+.theme-rounded {
+  border-radius: var(--theme-border-radius);
+}
+
+.theme-shadow {
+  box-shadow: var(--theme-shadow);
+}
+
+/* Theme-specific animations */
+.theme-modern .animate-gradient {
+  background: var(--theme-gradient-primary);
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+.theme-luxe .animate-gold {
+  background: var(--theme-gold-shine);
+  background-size: 200% 200%;
+  animation: goldShimmer 2s ease-in-out infinite;
+}
+
+.theme-vibrant .animate-rainbow {
+  background: var(--theme-gradient-rainbow);
+  background-size: 300% 300%;
+  animation: rainbowShift 4s ease infinite;
+}
+
+.theme-tech .animate-glow {
+  box-shadow: var(--theme-glow);
+  animation: techGlow 2s ease-in-out infinite alternate;
+}
+
+.theme-vibrant .animate-vibrant-glow {
+  box-shadow: var(--theme-vibrant-glow);
+  animation: vibrantPulse 2s ease-in-out infinite alternate;
+}
+
+/* Animation keyframes */
+@keyframes gradient-diagonal {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient-x {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes goldShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rainbowShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes techGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.7);
+  }
+}
+
+@keyframes vibrantPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(236, 72, 153, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(236, 72, 153, 0.7);
+  }
+}
+
+/* Responsive theme adjustments */
+@media (max-width: 768px) {
+  .theme-luxe {
+    --theme-shadow: 0 10px 25px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .theme-vibrant {
+    --theme-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Dark mode support for themes */
+@media (prefers-color-scheme: dark) {
+  .theme-minimal {
+    --theme-background: #111827;
+    --theme-text: #f9fafb;
+    --theme-border: #374151;
+  }
+  
+  .theme-modern {
+    --theme-background: #0f172a;
+    --theme-text: #f1f5f9;
+    --theme-border: #334155;
+  }
+  
+  .theme-vibrant {
+    --theme-background: #1f2937;
+    --theme-text: #f9fafb;
+    --theme-border: #4b5563;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --theme-border: #000000;
+  }
+  
+  .theme-luxe {
+    --theme-primary: #b8860b;
+    --theme-accent: #a0892d;
+  }
+  
+  .theme-vibrant {
+    --theme-primary: #dc2626;
+    --theme-secondary: #7c2d12;
+    --theme-accent: #0369a1;
+  }
+}
+
+/* Print styles */
+@media print {
+  .theme-tech,
+  .theme-luxe,
+  .theme-modern,
+  .theme-vibrant {
+    --theme-background: #ffffff;
+    --theme-text: #000000;
+    --theme-shadow: none;
+  }
+}

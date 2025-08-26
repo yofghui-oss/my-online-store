@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* Import theme-specific styles */
+@import './styles/themes.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    direction: rtl;
+  }
+  
+  body {
+    font-family: 'Tajawal', Arial, sans-serif;
+    @apply bg-secondary-50 dark:bg-secondary-950 text-secondary-700 dark:text-secondary-300;
+  }
+  
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full px-3 py-2 border border-secondary-300 dark:border-secondary-700 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 dark:bg-secondary-800 dark:text-white transition-colors;
+  }
+
+  .section-title {
+    @apply text-secondary-900 dark:text-white;
+  }
+}
+
+/* Dark mode scrollbar */
+.dark::-webkit-scrollbar {
+  width: 8px;
+}
+.dark::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+.dark::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+.dark::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* THEME STYLES */
+
+/* Modern Theme */
+.theme-modern .hero-section { @apply bg-secondary-100 dark:bg-secondary-900; }
+.theme-modern .hero-title { @apply text-secondary-900 dark:text-white; }
+.theme-modern .hero-subtitle { @apply text-secondary-600 dark:text-secondary-300; }
+.theme-modern .cta-button { @apply bg-primary-600 text-white; }
+.theme-modern .category-card { @apply bg-white dark:bg-secondary-800; }
+
+/* Luxe Theme */
+.theme-luxe { font-family: 'Cormorant Garamond', serif; }
+.theme-luxe .hero-section { @apply bg-cover bg-center; background-image: url('https://img-wrapper.vercel.app/image?url=https://images.unsplash.com/photo-1588099768531-a72d4a198538?q=80&w=2574&auto=format&fit=crop'); }
+.theme-luxe .hero-section::before { content: ''; @apply absolute inset-0 bg-black/50; }
+.theme-luxe .hero-title, .theme-luxe .hero-subtitle { @apply relative text-white; }
+.theme-luxe .cta-button { @apply bg-white text-black border-2 border-transparent hover:bg-transparent hover:text-white hover:border-white; }
+.theme-luxe .section-title { @apply font-bold; }
+.theme-luxe .category-card { @apply bg-transparent border-none shadow-none; }
+.theme-luxe .category-image { @apply grayscale group-hover:grayscale-0 transition-all duration-500; }
+.theme-luxe .category-name { @apply text-lg; }
+
+/* Vibrant Theme */
+.theme-vibrant { font-family: 'Inter', sans-serif; }
+.theme-vibrant .hero-section { @apply bg-gradient-to-br from-pink-500 to-purple-600; }
+.theme-vibrant .hero-title, .theme-vibrant .hero-subtitle { @apply text-white; }
+.theme-vibrant .cta-button { @apply bg-yellow-400 text-black font-bold rounded-full; }
+.theme-vibrant .section-title { @apply font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-purple-600; }
+.theme-vibrant .category-card { @apply rounded-2xl; }

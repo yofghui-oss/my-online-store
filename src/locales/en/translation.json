@@ -1,0 +1,157 @@
+{
+  "direction": "ltr",
+  "layout": {
+    "text_align": "left",
+    "flex_direction": "row",
+    "margin_start": "ml",
+    "margin_end": "mr",
+    "padding_start": "pl",
+    "padding_end": "pr",
+    "left": "left",
+    "right": "right"
+  },
+  "header": {
+    "main": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact Us",
+    "login": "Login",
+    "getStarted": "Get Started Free",
+    "storeBuilder": "Store Builder",
+    "dashboard": "Dashboard",
+    "toggle_en": "English",
+    "toggle_ar": "العربية",
+    "store": {
+      "products": "Products",
+      "about": "About Us"
+    }
+  },
+  "landing": {
+    "hero": {
+      "title": "Create Your Online Store",
+      "highlight": "in Minutes",
+      "subtitle": "A comprehensive platform for creating and managing online stores easily and quickly. No technical experience required.",
+      "cta_free": "Start Free Now",
+      "cta_demo": "Watch Demo",
+      "preview_alt": "Online Store Preview"
+    },
+    "features": {
+      "title": "Why Choose Store Builder?",
+      "subtitle": "We provide everything you need to create a successful and profitable online store",
+      "items": {
+        "management": {
+          "title": "Comprehensive Store Management",
+          "description": "Manage products, orders, and customers from one control panel"
+        },
+        "customization": {
+          "title": "Unlimited Customization",
+          "description": "Drag and drop tools to fully customize your store design"
+        },
+        "analytics": {
+          "title": "Advanced Analytics",
+          "description": "Track sales, profits, and product performance with detailed reports"
+        },
+        "security": {
+          "title": "High Security",
+          "description": "Advanced protection for your store and customer data"
+        },
+        "speed": {
+          "title": "Super Speed",
+          "description": "Fast and optimized performance to enhance user experience"
+        },
+        "support": {
+          "title": "24/7 Technical Support",
+          "description": "Specialized support team always available to help you"
+        }
+      }
+    },
+    "pricing": {
+      "title": "Pricing Plans",
+      "subtitle": "Choose the plan that fits your needs",
+      "popular": "Most Popular",
+      "monthly": "Monthly",
+      "sar": "SAR",
+      "plans": {
+        "free": {
+          "name": "Free",
+          "price": "0",
+          "features": ["Up to 10 products", "Basic design", "Email support", "Basic analytics"],
+          "cta": "Start Free"
+        },
+        "advanced": {
+          "name": "Advanced",
+          "price": "99",
+          "features": ["Unlimited products", "5 custom designs", "Priority support", "Advanced analytics", "Custom domain", "SEO optimization"],
+          "cta": "Choose This Plan"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "299",
+          "features": ["All Advanced features", "Unlimited custom designs", "Dedicated support", "System integrations", "Detailed reports", "Multi-team management"],
+          "cta": "Choose This Plan"
+        }
+      }
+    },
+    "testimonials": {
+      "title": "What Our Customers Say?",
+      "subtitle": "Real opinions from successful store owners",
+      "items": [
+        {
+          "name": "Ahmed Al-Salem",
+          "role": "Fashion Store Owner",
+          "content": "Store Builder helped me launch my online store in less than one day. The tools are easy and the support is excellent."
+        },
+        {
+          "name": "Fatima Al-Mohammad",
+          "role": "Jewelry Store Owner",
+          "content": "The designs are amazing and customization is very easy. My sales increased by 200% in two months."
+        },
+        {
+          "name": "Mohammad Al-Otaibi",
+          "role": "Electronics Store Owner",
+          "content": "The best platform I've tried for creating online stores. The analytics help me understand my customers better."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Your E-commerce Journey?",
+      "subtitle": "Join thousands of successful merchants and get your online store today",
+      "button": "Start Your Store Free"
+    }
+  },
+  "footer": {
+    "subtitle": "A comprehensive platform for creating and managing online stores easily and quickly",
+    "quickLinks": "Quick Links",
+    "resources": "Resources",
+    "contactUs": "Contact Us",
+    "links": {
+      "home": "Home",
+      "features": "Features",
+      "pricing": "Pricing",
+      "support": "Technical Support",
+      "docs": "Documentation",
+      "tutorials": "Tutorials",
+      "blog": "Blog",
+      "community": "Community"
+    },
+    "address": "Riyadh, Saudi Arabia",
+    "copyright": "© 2025 Store Builder. All rights reserved."
+  },
+  "super_admin": {
+    "title": "Super Admin Dashboard",
+    "overview": "Platform Overview",
+    "stores": "Store Management",
+    "users": "User Management",
+    "settings": "Settings",
+    "system_health": "System Health",
+    "total_stores": "Total Stores",
+    "total_users": "Total Users",
+    "total_revenue": "Total Revenue",
+    "mrr": "Monthly Recurring Revenue"
+  },
+  "placeholder": {
+    "title": "Page Under Construction",
+    "message": "We are currently working on this page. Please check back soon!",
+    "goHome": "Go Home"
+  }
+}
